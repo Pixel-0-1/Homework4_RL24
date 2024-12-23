@@ -99,15 +99,16 @@ To open the Gazebo world with both the navigation and aruco node, launch :
 ros2 launch rl_fra2mo_description vision_based.launch.py
   ```
   
-To send the robot in proximity of the obstacle 9, detect the aruco and return to its initial position, run :
+b. To send the robot in proximity of the obstacle 9, detect the aruco and return to its initial position, run :
 
 ```bash
 ros2 run rl_fra2mo_description detection.py
   ```
 
 The pose of the Aruco will be automatically published when the marker is detected
-Otherwise, run on another terminal :
+
+c. To publish the aruco pose through the static TF, run on another terminal :
 
 ```bash
-ros2 topic echo /tf_static
+ros2 run rl_fra2mo_description static_aruco_tf2_broadcaster
   ```
