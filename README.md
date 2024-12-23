@@ -18,8 +18,11 @@ source install/setup.bash
 
 To visualize :
 a. The robot at the desired position x = −3 m, y = 3.5 m, Y = −90 deg
+
 b. The obstacle 9 at position x = −3 m, y = −3.3 m, z = 0.1 m, Y = 90 deg
+
 c. The Aruco marker 115 positionated on the obstacle 9
+
 launch :
 
 ```bash
